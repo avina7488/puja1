@@ -1,51 +1,47 @@
-$("body").quietflow({
-    theme : "bouncingBalls",
-    specificColors : [
-      "rgb(0,152,118)",
-      "rgb(255,32,82)", 
-      "rgb(0,168,231)", 
-      "aqua"
-    ]
-  });
+    window.sr = ScrollReveal();
+    sr.reveal('.dark-overlay', {
+      duration: 2500,
+      delay: 1000,
+    });
 
-/*	
+    sr.reveal('#chat1, #chat2, #chat3, #chat4, #chat5, #chat6, #chat7', {
+      viewFactor: 0,
+      duration: 2000,
+      origin: 'top',
+      distance: '20px',
+    }, 4000)
 
-var myAudio = document.getElementById("myAudio");
-var myAudioEng = document.getElementById("myAudioEng");
-var isPlaying = false;
+    sr.reveal('#chat1, #chat3 ,#chat5, #chat7', {
+      origin: 'top',
+    }, 4000)
 
-function togglePlay() {
-  if (isPlaying) {
-    myAudio.pause()
-  } else {
-    myAudio.play();
-  }
-};
-myAudio.onplaying = function() {
-  isPlaying = true;
-};
-myAudio.onpause = function() {
-  isPlaying = false;
-};
+    sr.reveal('#chat2, #chat4, #chat6', {
+      origin: 'bottom',
+    }, 4000)
 
-function togglePlayEng() {
-  if (isPlaying) {
-    myAudioEng.pause()
-  } else {
-    myAudioEng.play();
-  }
-};
-
-myAudioEng.onplaying = function() {
-  isPlaying = true;
-};
-myAudioEng.onpause = function() {
-  isPlaying = false;
-};
+    sr.reveal('#chat1', {
+        delay: 4000,
+    }, 4000)
 
 
-$('.sound div').click(function(){
-    $(this).find('i').toggleClass('fa-music fa-pause')
-});
+    sr.reveal('h2', {
+      viewFactor:0.2,
+      duration: 1500,
+      origin: 'left',
+      distance: '200px',
+      reset: true,
+    })
 
-  */
+    sr.reveal('.container p', {
+      viewFactor:0.2,
+      duration: 1500,
+      origin: 'right',
+      distance: '200px',
+      reset: true,
+    })
+
+    sr.reveal('i', {
+      duration: 8000,
+      viewFactor: 0.2,
+      rotate: {x: 0, y: 900, z: 0}
+    });

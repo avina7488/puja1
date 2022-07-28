@@ -1,42 +1,39 @@
-﻿<html>
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <title>PUJA's Days</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css">
-    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-    <script src="quietflow.min.js"></script>
-    <link rel="stylesheet" href="style.css">
-	
-</head>
-<body>
-    <header>
-    <br><br>
-         <h1 class="title">Puja's Day</h1>
-    </header>
+<!DOCTYPE html>
+<html>
 
-    <div class="container">
-        <div class="cover">
-            <div class="front">
-                <p class="hpy">Happy</p>
-            </div>
-            <div class="back"></div>
-        </div>
-        <div class="cover2">
-            <div class="front2">
-                    <p class="hpy">Birthday</p>
-            </div>
-            <div class="back2"></div>
-        </div>
-        <p class="intro">To Birthday's Girl<br> <i class="em em-heartpulse"></i></p>
-        <p class="content">सदा दूर रहो तुम ग़मो की परछाईं से हो ना वास्ता कभी तुम्हारा तन्हाँईयों से<br><span class="frnd">हर ख्वाब हर #अरमान पूरा हो आपका यही दुआ है दिल ❤ की गहराई से…<br>
-<span class="sis">जन्मदिन    मुबारक   हो   AApko <br>
-</span></p>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Happy Birthday!</title>
+
+  <link rel="stylesheet" href="styles/flexbox-center-container.css" media="all">
+  <link rel="stylesheet" href="styles/system-fonts.css" media="all">
+  <link rel="stylesheet" href="styles/style.css" media="all">
+</head>
+
+<body>
+  <canvas id=c></canvas>
+  <canvas id="confetti"></canvas>
+  <div class="container" id="count">
+    <h1 id="head">Countdown to your birthday:</h1>
+    <ul>
+      <li><span id="day"></span>days</li>
+      <li><span id="hour"></span>hours</li>
+      <li><span id="minute"></span>minutes</li>
+      <li><span id="second"></span>seconds</li>
+    </ul>
+  </div>
+  <div id="merrywrap" class="merrywrap">
+    <canvas id="snowfall"></canvas>
+    <div class="giftbox">
+      <div class="cover">
+        <div></div>
+      </div>
+      <div class="box"></div>
     </div>
-  
-    <script src="main.js"></script>
 </body>
+<script>setTimeout("location.href = 'second.html';",27000);</script>
+<script src="scripts/confetti.min.js" charset="utf-8"></script>
+<script src="scripts/index.js" charset="utf-8"></script>
+
 </html>
